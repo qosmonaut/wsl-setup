@@ -1,2 +1,4 @@
-# Use native Explorer of the WSL instead of xdg-open
+# Add WSL integrations
 alias xdg-open=/usr/bin/explorer
+alias copy='clip.exe'
+alias xcopy='clip.exe'
