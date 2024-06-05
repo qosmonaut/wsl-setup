@@ -5,4 +5,5 @@ To use, clone the repository and run the setup.sh script with elevated permissio
 ```
 $ git clone https://github.com/qosmonaut/wsl-setup.git ~/repos/wsl-setup
 $ ~/repos/wsl-setup/setup.sh
+$ source ~/.bashrc
 ```
