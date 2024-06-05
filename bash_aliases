@@ -1,4 +1,5 @@
 # Add WSL integrations
-alias xdg-open=/usr/bin/explorer
+alias open='explorer.exe'
+alias xdg-open='explorer.exe'
 alias copy='clip.exe'
 alias xcopy='clip.exe'
