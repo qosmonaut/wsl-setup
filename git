@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ "$(pwd -P)/" =~ ^/mnt/./ ]]; then
+    exec git.exe "$@"
+else
+    exec /usr/bin/git "$@"
+fi
