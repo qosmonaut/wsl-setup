@@ -7,6 +7,10 @@ DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 echo "Copying aliases..."
 cp $DIR/bash_aliases ~/.bash_aliases
 
+# Set gitconfig
+echo "Copying git config..."
+cp $DIR/gitconfig ~/.gitconfig
+
 # tmux customizations
 echo "Setting up tmux..."
 cp $DIR/tmux.conf ~/.tmux.conf
