@@ -3,6 +3,12 @@
 	editor = 'code' --wait
 	autocrlf = false
 	eol = lf
+	packedGitLimit = 512m 
+	packedGitWindowSize = 512m 
+[pack] 
+	deltaCacheSize = 2047m 
+	packSizeLimit = 2047m 
+	windowMemory = 2047m
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
