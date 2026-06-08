@@ -1,19 +1,39 @@
 # This is Git's per-user configuration file.
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[commit]
+	gpgsign = true
+	template = ~/.gitmessage
 [core]
 	editor = 'code' --wait
 	autocrlf = false
 	eol = lf
-	packedGitLimit = 512m 
-	packedGitWindowSize = 512m 
-[pack] 
-	deltaCacheSize = 2047m 
-	packSizeLimit = 2047m 
-	windowMemory = 2047m
+	packedGitLimit = 512m
+	packedGitWindowSize = 512m
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[pack] 
+	deltaCacheSize = 2047m
+	packSizeLimit = 2047m
+	windowMemory = 2047m
+[pull]
+	ff = only
+[rebase]
+	autosquash = true
+[tag]
+	gpgsign = true
+	sort = version:refname
 [user]
 	name = 
 	email = 
