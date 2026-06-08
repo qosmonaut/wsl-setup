@@ -12,9 +12,10 @@ echo "Copying git script..."
 sudo cp $DIR/git /usr/local/bin/git
 sudo chown root:root /usr/local/bin/git
 
-# Set gitconfig
-echo "Copying git config..."
+# Set gitconfig and gitmessage
+echo "Copying git config and commit message template..."
 cp $DIR/gitconfig ~/.gitconfig
+cp $DIR/gitmessage ~/.gitmessage
 
 # tmux customizations
 echo "Setting up tmux..."
